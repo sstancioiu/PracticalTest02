@@ -101,28 +101,21 @@
         android:columnCount="2">
 
         <EditText
-            android:id="@+id/city_edit_text"
+            android:id="@+id/word_to_search"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="5"
-            android:hint="@string/city"
+            android:hint="word"
             android:layout_row="0"
             android:layout_column="0"/>
 
-        <Spinner
-            android:id="@+id/information_type_spinner"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:entries="@array/information_types"
-            android:layout_row="1"
-            android:layout_column="0"/>
 
         <Button
-            android:id="@+id/get_weather_forecast_button"
+            android:id="@+id/get_word"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/get_weather_forecast"
+            android:text="@string/get_word"
             android:layout_row="0"
             android:layout_rowSpan="2"
             android:layout_column="1"/>
@@ -134,10 +127,11 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/weather_forecast_text_view"
+            android:id="@+id/word_results"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:maxLines="10"/>
+            android:maxLines="10"
+            android:text="Result will be here"/>
 
     </ScrollView>
 
